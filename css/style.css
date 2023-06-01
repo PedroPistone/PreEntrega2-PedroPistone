@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+    margin: none;
+    font-family:Helvetica, sans-serif;
+}
+/* index */
+/* header */
+#Logotipo-principal{
+    width: 100px;
+    height: 70px;
+}
+#encabezado{
+    display: inline;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.menu li {
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 25px;
+}
+.menu ul li a{
+    display: block;
+}
+.menu ul li a:hover{
+    background-color: blueviolet;
+    padding: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.Imagenprincipal{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: solid 1px gray;
+    border-bottom: none;
+}
+.textoprincipal{
+    border: solid 1px gray;
+    border-top: none;
+    width: 900px;
+    height: 715px;
+    overflow: auto;
+    margin: auto;
+    text-align: center;
+}
+.textoprincipal iframe{
+    padding-top: 25px;
+    width: 800px;
+    height: 350px;
+}
+#titulosecundario{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#publicidad{ 
+    width: 250px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/* pie de pagina */
+footer{
+    font-size: large;
+    background-color: gray;
+    border: solid 1px black;
+
+}
+h5{
+    display: inline;
+}
+
+
+.redes{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* HISTORIA */
+#historia{
+    display: inline;
+}
+.sectionhistoria p{
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 1300px;
+}
+
+.segundoSectionHistoria{
+    display: flex;
+}
+.segundoSectionHistoria img{
+    margin-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.segundoSectionHistoria div{
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 700px;
+}
+
+/* AUTOMOVILISMO */
+#automovilismo{
+    display: inline;
+}
+.articleAuto{
+    display: flex;
+}
+#primerImagen{
+    margin-left: 100px;
+    margin-top: 200px;
+}
+#primero{
+    margin-left: 400px;
+}
+/* Fabricas*/
+
+#mapa{
+    border-radius: 5px;
+}
+
+/* vehiculos */
+.autos{
+    width: 600px;
+    height: 285px;
+}
