@@ -1,148 +1,430 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html{
-    font-size: 62,5%;
-    margin: none;
-    font-family:Helvetica, sans-serif;
-}
+  font-size: 62,5%;
+  margin: none;
+  font-family:Helvetica, sans-serif;
+  }
+  body {
+  background-color: #f2f2f2;
+  color: #333;
+  }
+  header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
 /* index */
 /* header */
 #Logotipo-principal{
-    width: 100px;
-    height: 70px;
-}
-#encabezado{
-    display: inline;
+  width: 100px;
+  height: 70px;
 }
 
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
 
-.menu{
-    position: fixed;
-    top: 0;
-    right: 0;
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-.menu li {
-    display: inline-block;
-    margin-right: 60px;
-    margin-top: 25px;
+
+.menu ul li {
+  margin-right: 10px;
 }
-.menu ul li a{
-    display: block;
+
+.menu ul li:last-child {
+  margin-right: 0;
 }
-.menu ul li a:hover{
-    background-color: blueviolet;
-    padding: auto;
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: 0.3s ease;
 }
+
+.menu ul li a:hover {
+  background-color: #001f3f;
+  color: #fff;
+}
+
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 h2{
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .Imagenprincipal{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    border: solid 1px gray;
-    border-bottom: none;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  border: solid 1px gray;
+  border-bottom: none;
 }
 .textoprincipal{
-    border: solid 1px gray;
-    border-top: none;
-    width: 900px;
-    height: 715px;
-    overflow: auto;
-    margin: auto;
-    text-align: center;
+  border: solid 1px gray;
+  border-top: none;
+  width: 900px;
+  height: 715px;
+  overflow: auto;
+  margin: auto;
+  text-align: center;
 }
 .textoprincipal iframe{
-    padding-top: 25px;
-    width: 800px;
-    height: 350px;
+  padding-top: 25px;
+  width: 800px;
+  height: 350px;
 }
 #titulosecundario{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #publicidad{ 
-    width: 250px;
-    height: 300px;
-    margin-bottom: 30px;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 30px;
 }
 
 /* pie de pagina */
-footer{
-    font-size: large;
-    background-color: gray;
-    border: solid 1px black;
-
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
-h5{
-    display: inline;
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
+footer .redes {
+  margin-bottom: 20px;
+}
 
-.redes{
-    width: 35px;
-    height: 35px;
-    border-radius: 10px;
-    margin-top: 5px;
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.redes {
+  width: 30px;
+  margin: 0 5px;
 }
 
 /* HISTORIA */
-#historia{
-    display: inline;
-}
+
 .sectionhistoria p{
-    margin-left: 100px;
-    margin-top: 10px;
-    width: 1300px;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 1300px;
 }
 
 .segundoSectionHistoria{
-    display: flex;
+  display: flex;
 }
 .segundoSectionHistoria img{
-    margin-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .segundoSectionHistoria div{
-    margin-top: 60px;
-    margin-left: 10px;
-    width: 700px;
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 700px;
 }
 
 /* AUTOMOVILISMO */
-#automovilismo{
-    display: inline;
+#automovilismo {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
 }
-.articleAuto{
-    display: flex;
+
+section {
+  margin: 20px;
 }
-#primerImagen{
-    margin-left: 100px;
-    margin-top: 200px;
+
+section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
-#primero{
-    margin-left: 400px;
+
+.articleAuto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.articleAuto div {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.articleAuto h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.articleAuto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.articleAuto p {
+  font-size: 14px;
+}
+
+
+
 /* Fabricas*/
-
-#mapa{
-    border-radius: 5px;
+.sectionFabricas {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* vehiculos */
-.autos{
-    width: 600px;
-    height: 285px;
+.fabricaInfo {
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.fabricaInfo h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.fabricaInfo p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.mapa-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mapa-container iframe {
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* VEHICULOS  */
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.articleVehiculos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.articleVehiculos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.articleVehiculos p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* Media query para dispositivos con ancho máximo de 500px */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  /* Ajustes para el encabezado */
+  header {
+    padding: 10px; /* Reducir el espacio alrededor del encabezado */
+  }
+/* Media query para dispositivos con ancho máximo de 500px */
+@media screen and (max-width: 500px) {
+  @media only screen and (max-width: 500px) {
+    .menu {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .menu ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: black;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+  
+    .menu ul li {
+      margin-bottom: 5px;
+    }
+  
+    .menu ul li a {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
+    .menu-button span {
+      background-color: #333;
+      transition: all 0.3s ease;
+    }
+  
+    .menu-button span:nth-child(2) {
+      top: 45%;
+    }
+  
+    .menu-button span:nth-child(3) {
+      bottom: 10%;
+    }
+  
+    .menu.active ul {
+      display: block;
+    }
+  }}
+
+
+  /* Ajustes para la sección principal */
+  .Imagenprincipal {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    max-width: 100%; /* Ajustar el ancho máximo al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+    padding: 10px; /* Añadir espacio alrededor de la imagen */
+    box-sizing: border-box; /* Incluir el espacio del borde en el tamaño total */
+  }
+
+  .textoprincipal {
+    width: 100%; /* Ajustar el ancho al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin: 10px; /* Añadir un margen */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .textoprincipal iframe {
+    width: 100%; /* Ajustar el ancho al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+
+  /* Ajustes para la sección de historia */
+  .sectionhistoria p {
+    margin-left: 10px; /* Reducir el margen izquierdo */
+    margin-right: 10px; /* Reducir el margen derecho */
+    margin-top: 10px; /* Reducir el margen superior */
+    width: auto; /* Ajustar el ancho automáticamente */
+  }
+
+  .segundoSectionHistoria {
+    flex-direction: column; /* Mostrar elementos en una columna */
+  }
+
+  .segundoSectionHistoria img {
+    margin: 10px; /* Añadir un margen */
+    max-width: 100%; /* Ajustar el ancho máximo al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+
+  .segundoSectionHistoria div {
+    margin: 10px; /* Añadir un margen */
+    width: auto; /* Ajustar el ancho automáticamente */
+    text-align: center; /* Centrar el contenido */
+  }
+
+  /* Ajustes para la sección de automovilismo */
+  #automovilismo {
+    font-size: 18px; /* Reducir el tamaño de fuente */
+  }
+
+  .articleAuto div {
+    width: calc(100% - 20px); /* Ajustar el ancho al 100% menos los márgenes */
+    margin-bottom: 20px; /* Añadir margen inferior */
+  }
+
+  /* Ajustes para la sección de fábricas */
+  .mapa-container iframe {
+    max-width: 100%; /* Ajustar el ancho al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+    border-radius: 0; /* Quitar el borde redondeado */
+    box-shadow: none; /* Quitar la sombra */
+  }
+
+  /* Ajustes para la sección de vehículos */
+  .articleVehiculos {
+    grid-template-columns: 1fr; /* Mostrar una columna en lugar de cuatro */
+    gap: 10px; /* Añadir espacio entre las imágenes */
+  }
+
+  .articleVehiculos img {
+    max-width: 100%; /* Ajustar el ancho máximo al 100% */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin-bottom: 10px; /* Añadir margen inferior */
+  }
+
+  .articleVehiculos p {
+    text-align: center; /* Centrar el texto */
+  }
+}
+
+
+
+
+
+
