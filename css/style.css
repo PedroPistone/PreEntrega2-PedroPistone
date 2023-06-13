@@ -280,66 +280,177 @@ h1 {
 
 
 
-
-/* Media query para dispositivos con ancho máximo de 500px */
 @media screen and (max-width: 500px) {
   html {
-    font-size: 50%; /* Reducir el tamaño de fuente para dispositivos móviles */
+    font-size: 50%;
   }
+
+header {
+    padding: 10px;
+  }
+
+.menu {
+  position: sticky;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+
+  .Imagenprincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+
+  .textoprincipal {
+    width: 100%; 
+    height: auto; 
+    margin: 10px; 
+    text-align: center; 
+  }
+
+  .textoprincipal iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajustes para la sección de historia */
+  .sectionhistoria p {
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .segundoSectionHistoria {
+    flex-direction: column; 
+  }
+
+  .segundoSectionHistoria img {
+    margin: 10px; 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .segundoSectionHistoria div {
+    margin: 10px; 
+    width: auto; 
+    text-align: center; 
+  }
+
+  /* Ajustes para la sección de automovilismo */
+  #automovilismo {
+    font-size: 18px;
+  }
+
+  .articleAuto div {
+    width: calc(100% - 20px);
+    margin-bottom: 20px; 
+  }
+
+  /* Ajustes para la sección de fábricas */
+  .mapa-container iframe {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 0;
+    box-shadow: none; 
+  }
+
+  /* Ajustes para la sección de vehículos */
+  .articleVehiculos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .articleVehiculos img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px; 
+  }
+
+  .articleVehiculos p {
+    text-align: center; 
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Media query para dispositivos con un ancho máximo de 768px */
 
   /* Ajustes para el encabezado */
   header {
     padding: 10px; /* Reducir el espacio alrededor del encabezado */
   }
-/* Media query para dispositivos con ancho máximo de 500px */
-@media screen and (max-width: 500px) {
-  @media only screen and (max-width: 500px) {
-    .menu {
-      top: 10px;
-      right: 10px;
-    }
-  
-    .menu-button {
-      display: block;
-    }
-  
-    .menu ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: black;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-    }
-  
-    .menu ul li {
-      margin-bottom: 5px;
-    }
-  
-    .menu ul li a {
-      font-size: 14px;
-      padding: 5px;
-    }
-  
-    .menu-button span {
-      background-color: #333;
-      transition: all 0.3s ease;
-    }
-  
-    .menu-button span:nth-child(2) {
-      top: 45%;
-    }
-  
-    .menu-button span:nth-child(3) {
-      bottom: 10%;
-    }
-  
-    .menu.active ul {
-      display: block;
-    }
-  }}
 
+  .menu {
+    position: sticky;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .menu a:hover {
+    background-color: #001f3f;
+    color: #fff;
+  }
 
   /* Ajustes para la sección principal */
   .Imagenprincipal {
@@ -422,9 +533,3 @@ h1 {
     text-align: center; /* Centrar el texto */
   }
 }
-
-
-
-
-
-
