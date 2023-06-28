@@ -1,154 +1,530 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html{
-    font-size: 62,5%;
-    margin: none;
-    font-family:Helvetica, sans-serif;
-}
+  font-size: 62,5%;
+  margin: none;
+  font-family:Helvetica, sans-serif;
+  }
+  body {
+  background-color: #f2f2f2;
+  color: #333;
+  }
+  header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
 /* index */
 /* header */
 #Logotipo-principal{
-    width: 100px;
-    height: 70px;
-}
-#encabezado{
-    display: inline;
-    align-items: start;
+  width: 100px;
+  height: 70px;
 }
 
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
 
-.menu{
-    position: fixed;
-    top: 0;
-    right: 0;
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-.menu li {
-    display: inline-block;
-    margin-right: 60px;
-    margin-top: 25px;
+
+.menu ul li {
+  margin-right: 10px;
 }
-.menu ul li a{
-    display: block;
+
+.menu ul li:last-child {
+  margin-right: 0;
 }
-.menu ul li a:hover{
-    background-color: blue;
-    padding: auto;
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: 0.3s ease;
 }
+
+.menu ul li a:hover {
+  background-color: #001f3f;
+  color: #fff;
+}
+
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 h2{
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .Imagenprincipal{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    border: solid 1px gray;
-    border-bottom: none;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  border: solid 1px gray;
+  border-bottom: none;
 }
 .textoprincipal{
-    border: solid 1px gray;
-    border-top: none;
-    width: 900px;
-    height: 715px;
-    overflow: auto;
-    margin: auto;
-    text-align: center;
+  border: solid 1px gray;
+  border-top: none;
+  width: 900px;
+  height: 715px;
+  overflow: auto;
+  margin: auto;
+  text-align: center;
 }
 .textoprincipal iframe{
-    padding-top: 25px;
-    width: 800px;
-    height: 350px;
+  padding-top: 25px;
+  width: 800px;
+  height: 350px;
 }
 #titulosecundario{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #publicidad{ 
-    width: 250px;
-    height: 300px;
-    margin-bottom: 30px;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 30px;
 }
 
 /* pie de pagina */
-footer{
-    font-size: large;
-    background-color: gray;
-    border: solid 1px black;
-
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
-h5{
-    display: inline;
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
+footer .redes {
+  margin-bottom: 20px;
+}
 
-.redes{
-    width: 35px;
-    height: 35px;
-    border-radius: 10px;
-    margin-top: 5px;
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.redes {
+  width: 30px;
+  margin: 0 5px;
 }
 
 /* HISTORIA */
-#historia{
-    display: inline;
-}
+
 .sectionhistoria p{
-    margin-left: 100px;
-    margin-top: 10px;
-    width: 1300px;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 1300px;
 }
 
 .segundoSectionHistoria{
-    display: flex;
+  display: flex;
 }
 .segundoSectionHistoria img{
-    margin-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .segundoSectionHistoria div{
-    margin-top: 60px;
-    margin-left: 10px;
-    width: 700px;
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 700px;
 }
 
 /* AUTOMOVILISMO */
+#automovilismo {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
 
-#automovilismo{
-    display: inline;
+section {
+  margin: 20px;
 }
-.articleAuto{
-    width: 50%;
-    margin: 20px auto;
-    padding: 15px;
+
+section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
-#primerImagen{
-    padding: 15px; 
-    width: 600px;
-    float: left;
+
+.articleAuto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#primero{
-    display: inline;
-    
+
+.articleAuto div {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.articleAuto h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.articleAuto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.articleAuto p {
+  font-size: 14px;
+}
+
+
+
 /* Fabricas*/
-
-#mapa{
-    border-radius: 5px;
+.sectionFabricas {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* vehiculos */
-.autos{
-    width: 600px;
-    height: 285px;
+.fabricaInfo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fabricaInfo h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.fabricaInfo p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.mapa-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mapa-container iframe {
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* VEHICULOS  */
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.articleVehiculos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.articleVehiculos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.articleVehiculos p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+header {
+    padding: 10px;
+  }
+
+.menu {
+  position: sticky;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+
+  .Imagenprincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+
+  .textoprincipal {
+    width: 100%; 
+    height: auto; 
+    margin: 10px; 
+    text-align: center; 
+  }
+
+  .textoprincipal iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajustes para la sección de historia */
+  .sectionhistoria p {
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .segundoSectionHistoria {
+    flex-direction: column; 
+  }
+
+  .segundoSectionHistoria img {
+    margin: 10px; 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .segundoSectionHistoria div {
+    margin: 10px; 
+    width: auto; 
+    text-align: center; 
+  }
+
+  /* Ajustes para la sección de automovilismo */
+  #automovilismo {
+    font-size: 18px;
+  }
+
+  .articleAuto div {
+    width: calc(100% - 20px);
+    margin-bottom: 20px; 
+  }
+
+  /* Ajustes para la sección de fábricas */
+  .mapa-container iframe {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 0;
+    box-shadow: none; 
+  }
+
+  /* Ajustes para la sección de vehículos */
+  .articleVehiculos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .articleVehiculos img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px; 
+  }
+
+  .articleVehiculos p {
+    text-align: center; 
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 10px; 
+  }
+
+  .menu {
+    position: sticky;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .menu a:hover {
+    background-color: #001f3f;
+    color: #fff;
+  }
+
+  /* Ajustes para la sección principal */
+  .Imagenprincipal {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 100%; 
+    height: auto;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+
+  .textoprincipal {
+    width: 100%;
+    height: auto; 
+    margin: 10px; 
+    text-align: center;
+  }
+
+  .textoprincipal iframe {
+    width: 100%; 
+    height: auto;
+  }
+
+  /* Ajustes para la sección de historia */
+  .sectionhistoria p {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto; 
+  }
+
+  .segundoSectionHistoria {
+    flex-direction: column;
+  }
+
+  .segundoSectionHistoria img {
+    margin: 10px; 
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .segundoSectionHistoria div {
+    margin: 10px;
+    width: auto; 
+    text-align: center;
+  }
+
+  /* Ajustes para la sección de automovilismo */
+  #automovilismo {
+    font-size: 18px;
+  }
+
+  .articleAuto div {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+
+  /* Ajustes para la sección de fábricas */
+  .mapa-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none; 
+  }
+
+  /* Ajustes para la sección de vehículos */
+  .articleVehiculos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .articleVehiculos img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; 
+  }
+
+  .articleVehiculos p {
+    text-align: center; 
+  }
 }
